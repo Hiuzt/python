@@ -1,0 +1,508 @@
+body {
+    margin: 0;
+    padding: 0;
+    color: rgb(200, 200, 200);
+    background-color: #111827;
+    font-family:system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+.video__bg {
+    position: absolute;  
+    height: 100vh;
+    filter: blur(4px);
+    z-index: -1;
+}
+
+video {
+    width: 100vw;
+    height: 100vh;
+    object-fit: cover;
+}
+
+.container {
+    width: 100vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.xcontainer {
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+h1 {
+    font-size: 60px;
+    text-align: center;
+    margin: 0;
+}
+
+h2 {
+    font-size: 32px;
+    margin: 0;
+}
+
+.start__button {
+    all: unset;
+    background-color: rgba(60,164,118,1);
+    border-radius: 20px;
+    padding: 10px 70px;
+    margin: 30px 0;
+    color: #111827;
+    display: flex;
+    align-items: center;
+    transition: 0.2s linear;
+    position: relative;
+   
+    text-transform: uppercase;
+    font-weight: 500;
+    font-family:system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    
+}
+
+.start__button:hover {
+    box-shadow: 0px 0px 51px 0px rgba(60,164,81,1);
+    cursor: pointer;
+}
+
+.start__button:hover span  {
+    opacity: 100;
+}
+
+.start__button p {
+    transition: linear 0.2s;
+    margin: 0;
+    padding: 0;
+}
+
+.start__button:hover p {
+
+    transform: translateX(-10px);
+}
+
+.start__button span svg {
+    fill: #111827;
+}
+
+.start__button span {
+    opacity: 0;
+    position: absolute;
+    transition: linear 0.2s;  
+    left: 50%; 
+    transform: translateX(30px);
+    
+}
+
+.colored {
+    color: rgba(60,164,118,1);
+}
+
+
+/* LOGIN */
+.login-container {
+    display: grid;
+    grid-template-columns: 50vw 50vw;
+    width: 100vw;
+    height: 100vh;
+}
+
+.login-container .left-side {
+    background: radial-gradient(circle, rgba(60,164,118,1) 10%, #111827 60%);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 100%;
+}
+
+.login-container .left-side h1 {
+    font-size: 42px;
+    padding: 0 140px;
+    margin: 0 0 15px 0;  
+}
+
+.login-container .left-side .register-button {
+    margin-top: 15px;
+    padding: 10px 20px;
+    background-color: rgba(60,164,118,0.3);
+    border: solid 2px rgba(60,164,118,0.3);
+    border-radius: 5px;
+}
+
+.right-side {
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+}
+
+
+.login-form {
+    width: 60%;
+    position: relative;
+}
+
+.form-group {
+    display: flex;
+    flex-direction: column;
+    padding: 10px 0;
+}
+
+.form-group label {
+    font-size: 16px;
+}
+
+.form-group input {
+    all: unset;
+    border: solid 1px rgb(215,215,218);
+    padding: 10px 0 10px 10px;
+    border-radius: 5px;
+    margin: 5px 0;
+    font-weight: 600;
+    font-size: 14px;
+    
+}
+
+.form-group input:focus {
+    border-color: rgba(60,164,81,1);
+}
+
+
+.form-group input::placeholder {
+    color: rgb(150, 150, 150);
+}
+
+.login-form input[type="submit"] {
+    all: unset;
+    width: 100%;
+    padding: 10px 0;
+    text-align: center;
+    background-color: rgba(60,164,118,1);
+    border-radius: 5px;
+    color: white;
+    text-transform: uppercase;
+    font-weight: 600;
+    margin-top: 10px;
+}
+
+.login-form input[type="submit"]:hover {
+    box-shadow: 0px 0px 20px 0px rgba(60,164,81,1);
+    cursor: pointer;
+}
+
+.separator {
+    margin: 40px 0 30px;
+    height: 1px;
+    background-color: rgb(215, 215, 215);
+    position: relative;
+}
+
+.separator::after {
+    display: flex;
+    align-items: center;
+    left: 50%;
+    top: 50%;
+    content: "VAGY";
+    position: absolute;
+    transform: translateX(-50%) translateY(-50%);
+    padding: 0 10px;
+    height: 40px;
+    background-color: #111827;
+}
+
+.register-text {
+    all: unset;
+}
+
+.register-text:hover {
+    cursor: pointer;
+}
+
+.table-container {
+    margin: auto;
+    width: 80%;
+    overflow-x: auto;
+}
+
+.invoice-table {
+    border-collapse: collapse;
+    table-layout: fixed;
+    background-color: #1F2937;
+    border-radius: 15px;
+}
+
+.invoice-table th {
+    padding: 20px;
+    text-align: center;
+}
+
+.invoice-table tbody tr {
+    border-top: 1px solid #252F3C;
+}
+
+.invoice-table td, .invoice-table tr {
+    padding: 14px;
+    text-align: center;
+
+}
+
+.invoice-table tbody tr:hover {
+    background-color: rgb(255, 255, 255, 0.02);
+}
+
+.control-container {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    margin: 20px 20px 0 0;
+    width: 80%;
+    gap: 10px;
+}
+
+.e-invoice {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    gap: 10px;
+    fill: white;
+}
+
+.control-container a svg {
+    fill: white;
+}
+
+.control-container a svg:hover {
+    fill: rgba(60,164,118,1)
+}
+
+.nav-container {
+    margin: auto;
+    display: flex;
+    width: 80vw;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.nav-container svg {
+    fill: white;
+    width: 32px;
+}
+
+.nav-container svg:hover {
+    fill: rgba(60,164,81,1);
+    cursor: pointer; 
+}
+
+.nav-container span a:nth-child(2) svg:hover {
+    fill: rgba(200,60,60,1);
+    cursor: pointer; 
+}
+
+/* XML */
+
+.invoice-bg {
+    background-color: #1F2937;
+    display: flex;
+    flex-direction: column;
+    /* width: 35vw; */
+    /* height: 60vh; */
+    border-radius: 20px;
+    margin: 0;
+    padding: 30px;
+}
+
+.invoice-bg .invoice-header {
+    display: flex;
+    gap: 100px;
+    justify-content: space-between;
+    margin: 20px 0 50px 0;
+}
+
+.invoice-bg h1 {
+    font-size: 20px;
+    text-align: left;
+    padding: 0 10px;
+}
+
+.invoice-bg h2 {
+    font-size: 16px;
+    color: rgba(60,164,81,1);
+    padding: 0 10px;
+}
+
+.invoice-bg p {
+    text-align: left;
+    font-size: 14px;
+    margin: 0;
+    color: rgb(200, 200, 200);
+    font-weight: 400;
+}
+
+.invoice-bg .header-bg {
+    display: flex;
+    margin-top: 20px;
+    align-items: center;
+    justify-content: space-between;
+    background-color: rgba(60,164,118,1);
+    height: 40px;
+    width: 100%;
+    color: #111827;
+    font-weight: 500;
+}
+
+.invoice-bg .header-bg span {
+    padding: 0 10px;
+}
+
+.top-header {
+    display: grid;
+    grid-template-columns: auto auto;
+}
+
+.top-header p:nth-child(even) {
+    text-align: right;
+}
+
+.invoice-items table {
+    border-bottom: 2px solid white;
+    border-collapse: collapse;
+    margin-top: 30px;
+}
+
+.invoice-items table thead tr th {
+    border-bottom: 2px solid white;
+    font-size: 16px;
+    color: white;
+    padding: 10px;
+    text-align: center;
+    
+}
+
+.invoice-items tr td {
+    padding: 20px;
+    border-bottom: rgba(255, 255, 255, 0.1) 1px solid;
+    color: #A2A2A2;
+    font-size: 14px;
+    text-align: center;
+}
+
+.invoice-bg .summary {
+    
+    display: grid;
+    grid-template-columns: 150px auto;
+    margin-left: auto;
+    margin-top: 20px;
+}
+
+.invoice-bg .summary p {
+    font-size: 18px;
+    margin-bottom: 5px;
+    font-weight: 600;
+    color: white;
+}
+
+
+.invoice-bg .summary span {
+    font-size: 18px;
+    margin-bottom: 5px;
+    font-weight: 600;
+    color: #A2A2A2;
+    text-align: right;
+}
+
+.invoice-bg .price-separator {
+    width: 100%;
+    height: 2px;
+    background-color: white;
+    margin: 5px 0;
+}
+
+.back-container {
+    width: 100%;
+    display: flex;
+}
+
+.back {
+    all: unset;
+    display: flex;
+    margin-right: auto;
+    align-items: center;
+    margin-bottom: 10px;
+    transition: 0.2s;
+}
+
+.back svg {
+    fill: white;
+    margin-right: 5px; 
+    transition: 0.2s;
+}
+
+
+ul.errorlist {
+    all: unset;
+    list-style-type: none;
+    color: rgb(235, 92, 92)
+}
+
+
+.back:hover {
+    color: rgba(60,164,118,1);
+    cursor: pointer;
+}
+
+.back:hover svg {
+    fill: rgba(60,164,118,1);    
+}
+
+
+
+@media screen and (max-width: 1000px) {
+    .login-container {
+        grid-template-columns: 100vw;
+        grid-template-rows: 100vh;
+    }
+
+    .login-container .left-side {
+        display: none;
+    }
+
+    .table .invoice-table {
+        overflow: scroll;
+    }
+
+    .right-side {
+        display: flex;
+    }
+
+    .login-form {
+        all: unset;
+        overflow: hidden;
+        width: 80%;
+        position: relative;
+    }   
+}
+
+@media screen and (max-width: 1200px) {
+    
+    .control-container {
+        justify-content: center;
+        padding-bottom: 20px;
+    }
+
+    .e-invoice {
+        display: table-cell;
+    }
+    .invoice-table th {
+        width: auto;
+    }
+}
+

@@ -1,0 +1,264 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<szamla>
+<fejlec>
+    <elado>
+        <nev>Számlaközpont Zrt.</nev>
+        <cim>
+            <teljes>7623 Pécs Nagyvárad utca 15.</teljes>    
+            <orszag>Magyarország</orszag>        
+            <orszag_kod>HU</orszag_kod>            
+            <telepules>Pécs</telepules>
+				<kerulet></kerulet>
+            <irszam>7623</irszam>
+            <kozternev>Nagyvárad</kozternev>
+            <kozterjell>utca</kozterjell>
+            <hazszam>15.</hazszam>
+				<epulet></epulet>
+				<lepcsohaz></lepcsohaz>				
+				<emelet></emelet>
+				<ajto></ajto>			
+				<telephely></telephely>			
+        </cim>
+        <adoszam>24091271-2-02</adoszam>
+        <kozadoszam>HU24091271_</kozadoszam>
+        <csoportos_adoszam></csoportos_adoszam>
+        <cegjegyzekszam></cegjegyzekszam>
+        <bankszamlaszam>99999999-99999999-99999999</bankszamlaszam>
+        <adoszamegyedi></adoszamegyedi>
+        <bank>probabank3</bank>
+        <bankszamlaszam1>99999999-99999999-99999998</bankszamlaszam1>
+        <iban></iban>
+        <iban1></iban1>
+        <swift>SSSS</swift>
+
+        <egyeni_vallalkozo></egyeni_vallalkozo>
+        <ev_nyilv_tart_szam></ev_nyilv_tart_szam>
+        <kisadozo></kisadozo>
+		<ev_nev></ev_nev>
+        <email>prescsak.robert@szamlakozpont.hu</email>
+		<telefon></telefon>
+		<fax></fax>
+		<honlap></honlap>
+		
+    </elado>
+    <vevo>
+        <nev>TESZT ELEK MAGYAR CÉG</nev>
+        <cim>
+            <teljes>1113 BUDAPEST , BOCSKAI ÚT 134-146.    </teljes>
+            <postacim></postacim>
+            <orszag>Magyarország</orszag>
+            <orszag_kod>HU</orszag_kod>            
+            <telepules>BUDAPEST</telepules>
+				<kerulet></kerulet>
+            <irszam>1113</irszam>
+            <kozternev>BOCSKAI</kozternev>
+            <kozterjell>ÚT</kozterjell>
+            <hazszam>134-146.</hazszam>
+				<epulet></epulet>
+				<lepcsohaz></lepcsohaz>
+				<emelet></emelet>
+				<ajto></ajto>
+			</cim>
+        <adoszam>21014967-2-06</adoszam>
+        <kozadoszam></kozadoszam>
+        <csoportos_adoszam></csoportos_adoszam>        
+        <harmadikfel_adoszam></harmadikfel_adoszam>        
+        <cegjegyzekszam></cegjegyzekszam>
+        <idegenazonosito>939610</idegenazonosito>
+        <email>szerviz@szamlakozpont.hu</email>
+        <maganszemely>0</maganszemely>
+    </vevo>
+    <szamlainfo>
+        <sorszam>IBIZ/00000035/2024</sorszam>
+        <kialldatum>2024-01-10</kialldatum>
+        <teljdatum>2024-01-18</teljdatum>
+        <fizhatarido>2024-01-18</fizhatarido>
+        <fizmod>átutalás</fizmod>
+        <fizmod_kod>TRANSFER</fizmod_kod>
+        <szamlatipus>1</szamlatipus>
+        <penznem>HUF</penznem>
+        <hivatkozottszamla></hivatkozottszamla>        
+        <egyebadat>Számla a 12301255-ös számú szállító levél alapján. </egyebadat>
+        <lablec_egyebadat></lablec_egyebadat>
+        <nyelv>hu</nyelv>
+        <penzugyitnemigenyel></penzugyitnemigenyel>
+        <adatlap>0</adatlap>
+        <arfolyam>1</arfolyam>
+        <penzforgalmielszamolas></penzforgalmielszamolas>
+        <felhasznaloid></felhasznaloid>
+		<adat1></adat1>
+		<adat2></adat2>
+		<adat3></adat3>
+		<adat4></adat4>
+		<adat5></adat5>
+		<adat6></adat6>
+		<adat7></adat7>
+		<adat8></adat8>
+		<adat9></adat9>
+		<adat10></adat10>
+		<adat11></adat11>
+		<kulsoszamlaid></kulsoszamlaid>
+    </szamlainfo>
+	<egyeb>
+		<telephely></telephely>
+		<rendszam></rendszam>
+		<alvazszam></alvazszam>
+		<vkod></vkod>
+		<vazon></vazon>
+	</egyeb>
+</fejlec>
+<tetelek>
+	<tetel id="1">
+		<termeknev>alma \ körte</termeknev>
+		<megjegyzes></megjegyzes>
+		<menny>110</menny>
+		<mennyegys>kg</mennyegys>
+		<nettoegysegar>150.00</nettoegysegar>
+		<bruttoegysegar>190.50</bruttoegysegar>
+		<bruttoegysegarhuf>190.50</bruttoegysegarhuf>		
+		<nettoar>16500.00</nettoar>
+		<nettoarhuf>16500.00</nettoarhuf>
+		<afakulcs>27%</afakulcs>
+		<eafakulcs>21.26%</eafakulcs>		
+		<afaertek>4455.00</afaertek>
+		<afaertekhuf>4455.00</afaertekhuf>
+        <bruttoar>20955.00</bruttoar>
+        <bruttoarhuf>20955.00</bruttoarhuf>
+        <kiegadat_nev></kiegadat_nev>
+        <kiegadat_leiras></kiegadat_leiras>
+        <kiegadat></kiegadat>
+		<besorszam></besorszam>
+		<cikkszam></cikkszam>
+		<elolegtipus>false</elolegtipus>
+		<termekcsoport>0</termekcsoport>
+		<termek_afakulcs_id>8</termek_afakulcs_id>
+		<engedmeny></engedmeny>
+		<engedmenyszazalek></engedmenyszazalek>
+		<egyeb1></egyeb1>
+		<egyeb2></egyeb2>
+		<egyeb3></egyeb3>
+		<egyeb4></egyeb4>
+		<navcase></navcase>
+		<navreason></navreason>
+		<navvattype></navvattype>
+		<kozvetitettszolg></kozvetitettszolg>
+		<betetdij></betetdij>
+		<elolegszamla_sorszam></elolegszamla_sorszam>
+		<elolegszamla_datum></elolegszamla_datum>
+		<elolegszamla_arfolyam></elolegszamla_arfolyam>
+	</tetel>
+	<tetel id="2">
+		<termeknev>strandpapucs</termeknev>
+		<megjegyzes></megjegyzes>
+		<menny>12</menny>
+		<mennyegys>db</mennyegys>
+		<nettoegysegar>1500.00</nettoegysegar>
+		<bruttoegysegar>1905.00</bruttoegysegar>
+		<bruttoegysegarhuf>1905.00</bruttoegysegarhuf>		
+		<nettoar>18000.00</nettoar>
+		<nettoarhuf>18000.00</nettoarhuf>
+		<afakulcs>27%</afakulcs>
+		<eafakulcs>21.26%</eafakulcs>		
+		<afaertek>4860.00</afaertek>
+		<afaertekhuf>4860.00</afaertekhuf>
+        <bruttoar>22860.00</bruttoar>
+        <bruttoarhuf>22860.00</bruttoarhuf>
+        <kiegadat_nev></kiegadat_nev>
+        <kiegadat_leiras></kiegadat_leiras>
+        <kiegadat></kiegadat>
+		<besorszam></besorszam>
+		<cikkszam></cikkszam>
+		<elolegtipus>false</elolegtipus>
+		<termekcsoport>0</termekcsoport>
+		<termek_afakulcs_id>8</termek_afakulcs_id>
+		<engedmeny></engedmeny>
+		<engedmenyszazalek></engedmenyszazalek>
+		<egyeb1></egyeb1>
+		<egyeb2></egyeb2>
+		<egyeb3></egyeb3>
+		<egyeb4></egyeb4>
+		<navcase></navcase>
+		<navreason></navreason>
+		<navvattype></navvattype>
+		<kozvetitettszolg></kozvetitettszolg>
+		<betetdij></betetdij>
+		<elolegszamla_sorszam></elolegszamla_sorszam>
+		<elolegszamla_datum></elolegszamla_datum>
+		<elolegszamla_arfolyam></elolegszamla_arfolyam>
+	</tetel>
+	<tetel id="3">
+		<termeknev>árvíztűrőtükörfúrógép</termeknev>
+		<megjegyzes></megjegyzes>
+		<menny>2</menny>
+		<mennyegys>db</mennyegys>
+		<nettoegysegar>10000.00</nettoegysegar>
+		<bruttoegysegar>12700.00</bruttoegysegar>
+		<bruttoegysegarhuf>12700.00</bruttoegysegarhuf>		
+		<nettoar>20000.00</nettoar>
+		<nettoarhuf>20000.00</nettoarhuf>
+		<afakulcs>27%</afakulcs>
+		<eafakulcs>21.26%</eafakulcs>		
+		<afaertek>5400.00</afaertek>
+		<afaertekhuf>5400.00</afaertekhuf>
+        <bruttoar>25400.00</bruttoar>
+        <bruttoarhuf>25400.00</bruttoarhuf>
+        <kiegadat_nev></kiegadat_nev>
+        <kiegadat_leiras></kiegadat_leiras>
+        <kiegadat></kiegadat>
+		<besorszam></besorszam>
+		<cikkszam></cikkszam>
+		<elolegtipus>false</elolegtipus>
+		<termekcsoport>0</termekcsoport>
+		<termek_afakulcs_id>8</termek_afakulcs_id>
+		<engedmeny></engedmeny>
+		<engedmenyszazalek></engedmenyszazalek>
+		<egyeb1></egyeb1>
+		<egyeb2></egyeb2>
+		<egyeb3></egyeb3>
+		<egyeb4></egyeb4>
+		<navcase></navcase>
+		<navreason></navreason>
+		<navvattype></navvattype>
+		<kozvetitettszolg></kozvetitettszolg>
+		<betetdij></betetdij>
+		<elolegszamla_sorszam></elolegszamla_sorszam>
+		<elolegszamla_datum></elolegszamla_datum>
+		<elolegszamla_arfolyam></elolegszamla_arfolyam>
+	</tetel>
+
+</tetelek>
+<osszesites>
+	<afarovat id="1">
+		<afakulcs_id>8</afakulcs_id>
+		<navcase></navcase>
+		<navreason></navreason>
+		<navvattype></navvattype>
+		<nettoar>54500.00</nettoar>
+		<nettoarhuf>54500.00</nettoarhuf>
+		<afakulcs>27%</afakulcs>
+		<eafakulcs>21.26%</eafakulcs>		
+		<afaertek>14715.00</afaertek>
+		<afaertekhuf>14715.00</afaertekhuf>
+		<bruttoar>69215.00</bruttoar>
+		<bruttoarhuf>69215.00</bruttoarhuf>
+	</afarovat>
+
+	<vegosszeg>
+        <fizetendo>69215.00</fizetendo>
+        <bruttoarossz>69215.00</bruttoarossz>
+        <bruttoarosszhuf>69215.00</bruttoarosszhuf>
+        <nettoarossz>54500.00</nettoarossz>
+		<nettoarosszhuf>54500.00</nettoarosszhuf>
+        <afaertekossz>14715.00</afaertekossz>
+        <afaertekosszhuf>14715.00</afaertekosszhuf>
+        <peosszeg>69215.00</peosszeg>
+	</vegosszeg>
+</osszesites>
+<controller>
+	<partnercsere>FALSE</partnercsere>
+	<eszamla>1</eszamla>
+	<szamlatipus>1</szamlatipus>
+	<egyszerusitettszamla>FALSE</egyszerusitettszamla>
+	<elolegszamla>0</elolegszamla>
+</controller>
+</szamla>

@@ -1,0 +1,94 @@
+<html>
+    {% load static %}
+    {% load tag_library %}
+    <head>
+        <link rel="stylesheet" href="{% static 'style.css' %}">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        
+    </head>
+
+    <body>
+
+
+        <div class="xcontainer">
+            <div class="content-container">
+                <div class="back-container">
+                    <a href="/" class="back">
+                        <svg xmlns="http://www.w3.org/2000/svg" height="16" width="10" viewBox="0 0 320 512"><!--!Font Awesome Free 6.5.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc.--><path d="M9.4 233.4c-12.5 12.5-12.5 32.8 0 45.3l192 192c12.5 12.5 32.8 12.5 45.3 0s12.5-32.8 0-45.3L77.3 256 246.6 86.6c12.5-12.5 12.5-32.8 0-45.3s-32.8-12.5-45.3 0l-192 192z"/></svg>
+                        Vissza
+                    </a>
+                </div>
+                <div class="invoice-bg">
+                    <header>
+                        <div class="top-header">
+                            <p>Kiállítás dátuma: {{ data.szamla.kialldatum }}</p> 
+                            <p>Teljesítés dátuma: {{ data.szamla.teljdatum }} </p> 
+                            <p>Fizetési határidő: {{ data.szamla.fizhatarido }} </p> 
+                            <p>Fizetés módja: {{ data.szamla.fizmod }} </p> 
+                            <p>Pénznem: {{ data.szamla.penznem }}</p> 
+                            <p>Egyéb adatok: {{ data.szamla.egyebadat }}</p>
+                        </div> 
+
+                        <div class="header-bg"> 
+                            <span>Sorszám: {{ data.szamla.sorszam }}</span>
+                            <span>Számla típusa: {{ data.controller.szamlatipus|floatformat:"0"|invoice_type}} ({{ data.controller.eszamla|floatformat:"0"|e_invoice}})</span> 
+                        </div>
+                        <div class="invoice-header">
+                            <div>
+                                <h1>Vevő adatai</h1>     
+                                <h2>{{ data.vevo.nev }}<h2>
+                                <p>{{ data.vevo.cim.teljes}} </p>
+                                <p>Adószám: {{ data.vevo.adoszam }} </p>                
+                            </div>
+                            <div>
+                                <h1>Eladó adatai</h1>  
+                                <h2>{{ data.elado.nev }}<h2>
+                                <p>{{ data.elado.cim.teljes}} </p>
+                                <p>Adószám: {{ data.elado.adoszam }} </p>
+                                <p>Közösségi adószám {{ data.elado.kozadoszam }}</p>
+                            </div>                    
+                        </div>
+                    </header>
+                    <div class="invoice-items">
+
+                        <table>
+                            <thead>
+                                <tr>
+                                    <th>Terméknév</th>
+                                    <th>Besorszám</th>
+                                    <th>Mennyiség</th>
+                                    <th>Nettó egységár</th>
+                                    <th>Nettó ár</th>
+                                    <th>Áfakulcs</th>
+                                    <th>Áfaérték</th>
+                                    <th>Bruttó ár</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                {% for value in data.tetelek %} 
+                                    <tr>
+                                        <td>{{ value.termeknev }}</td>
+                                        <td>{{value.besorszam|default:""}}</td>  
+                                        <td>{{ value.menny }} {{ value.mennyegys }}</td>   
+                                        <td>{{ value.nettoegysegar }}/{{ value.mennyegys }}</td>   
+                                        <td>{{ value.nettoar|floatformat:"0" }}</td>   
+                                        <td>{{ value.afakulcs }}</td>   
+                                        <td>{{ value.afaertek|floatformat:"0" }}</td>   
+                                        <td>{{ value.bruttoar|floatformat:"0" }}</td>                                    
+                                    </tr>
+                                {% endfor %}
+                            </tbody>
+                        </table> 
+                    </div>
+                    <div class="summary">
+                        <p>Nettó ár</p><span>{{ data.osszesites.vegosszeg.nettoarossz|floatformat:"0"}}</span>
+                        <p>Áfa({{ data.osszesites.afarovat.afakulcs}})</p><span>{{ data.osszesites.afarovat.afaertek|floatformat:"0"}}</span>
+                        <div class="price-separator"></div>
+                        <div class="price-separator"></div>
+                        <p>Bruttó ár</p><span>{{ data.osszesites.vegosszeg.bruttoarossz|floatformat:"0"}}</span>
+                    </div>        
+                </div>
+            </div>
+        </div>
+    </body>
+</html>
